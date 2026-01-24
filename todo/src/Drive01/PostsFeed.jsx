@@ -1,4 +1,5 @@
 import React, { useEffect, useState } from 'react'
+import Comments from './comments'
 
 function PostsFeed() {
 
@@ -56,7 +57,7 @@ setName(namedata)
 
 try {
     let res =await fetch(`https://jsonplaceholder.typicode.com/posts/${id}/comments`)
-    console.log(res)
+    // console.log(res)
     let data=await res.json()
     console.log(data)
     setComment(data)
@@ -114,7 +115,6 @@ let postData=data.map((ele)=>{
 
 </section>
 
-
         
     </div>
     )
@@ -135,6 +135,22 @@ let postData=data.map((ele)=>{
 
 </div>
 
+{comment.length>0 && <Comments>
+    
+    {comment.map((ele)=>{
+
+return(
+    <div>
+
+<p>{ele.name}</p>
+<p>{ele.email}</p>
+<p>{ele.body}</p>
+
+</div>
+)
+    })}
+    
+   </Comments> }
   
   </>
   )
