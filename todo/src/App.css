@@ -1,0 +1,95 @@
+*{
+  padding: 0;
+  margin: 0;
+}
+
+#MainHeading{
+  text-align: center;
+  background-color: yellow;
+  border-radius: 10px;
+}
+
+.navBar{
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  background-color: yellow;
+  
+  
+}
+
+.navBar>h1{
+  background-color: yellowgreen;
+  padding: 10px;
+  border-radius: 10px;
+}
+
+
+.C2Q13{
+
+    display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  background-color: yellow;
+
+
+}
+
+.C2Q13Child{
+
+ display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  margin: 20px;
+  border: 2px solid red;
+  padding: 20px;
+  box-sizing: content-box;
+
+
+}
+
+.C2Q13Child>button{
+  background-color: blue;
+}
+
+
+
+#mainTitle{
+  text-align: center;
+  background-color: yellow;
+  color: teal;
+}
+
+
+#mainData{
+  background-color: rgb(211, 183, 211);
+border: 1p solid red;
+
+}
+
+
+#mainData>div{
+  border: 2px solid wheat;
+  margin: 10px; 
+ border-radius: 10px;
+ padding: 10px;
+
+}
+
+
+.namesec{
+
+  border: 2px solid red;
+  background-color: yellow;
+
+  border-radius: 10px;
+  
+}
+
+#commentsec{
+
+display: flex;
+justify-content: space-between;
+
+}
+
