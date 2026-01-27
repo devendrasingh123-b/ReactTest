@@ -1,4 +1,4 @@
-import React, { use, useEffect, useState } from 'react'
+import React, {  useEffect, useState } from 'react'
 import "./EC.css"
 
 
@@ -56,7 +56,7 @@ if(data.length>0){
   arr=data.slice(startValue,end)
   console.log(arr)
 }
-
+const totalPages = Math.ceil(data.length / max);
 
 
 
@@ -85,7 +85,7 @@ if(error){
   setValue(ele.target.value)
 }} />
 
-<button>Search</button>
+<button onClick={SearchingData}>Search</button>
 </div>
 
 
@@ -146,8 +146,8 @@ if(error){
 
 <div id='ProductBTN'>
 
-<button  onClick={()=>{setStart((ele)=>ele-1) }}>Prev</button>
-<button onClick={()=>{setStart((ele)=>ele+1)}}>Next</button>
+<button    disabled={start === 0} onClick={()=>{setStart((ele)=>ele-1) }} >Prev</button>
+<button  disabled={start>=totalPages-1}  onClick={()=>{setStart((ele)=>ele+1)}}  >Next</button>
 
 
 </div> 

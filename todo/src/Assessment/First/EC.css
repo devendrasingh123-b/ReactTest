@@ -1,0 +1,34 @@
+#MainProductDiv{
+
+    display: flex;
+    justify-content: space-evenly;
+    background-color: rgb(241, 241, 144);
+    flex-wrap: wrap;
+    border: 2px solid gray;
+row-gap: 20px;
+column-gap: 20px;
+
+}
+
+#MainProductDiv>div{
+
+display: flex;
+justify-content: space-evenly;
+flex-direction: column;
+border: 2px solid greenyellow;
+padding: 20px;
+border-radius: 10px;
+text-align: center;
+align-items: center;
+
+
+}
+
+#MainProductDiv>div>img{
+
+    width: 100px;
+    height: 100px;
+
+
+
+}
