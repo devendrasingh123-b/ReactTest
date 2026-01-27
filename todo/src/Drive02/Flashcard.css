@@ -6,7 +6,7 @@ margin: 10px;
 border-radius: 20px;
 display: flex;
 flex-direction: column;
-width: 200px;
+width: 300px;
 align-items: center;
 gap: 20px;
 text-align: center;
@@ -18,4 +18,13 @@ text-align: center;
     background-color: yellow;
     padding: 5px;
     border-radius: 10px;
+}
+
+#radioBTN{
+    padding: 10px;
+   
+}
+
+#radioBTN>div{
+    padding: 10px;
 }

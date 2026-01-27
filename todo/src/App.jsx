@@ -14,6 +14,7 @@ import C2Q15 from './Class02/C2Q15/C2Q15'
 import C3Q11 from './Class03/C3Q11'
 import PostsFeed from './Drive01/PostsFeed'
 import Flashcard from './Drive02/Flashcard'
+import ECommerceApp from './Assessment/First/ECommerceApp'
 
 function App() {
  
@@ -42,6 +43,10 @@ function App() {
 <Route path='Drive01' element={<PostsFeed/>} />
 {/* Drive02 */}
 <Route path='Drive02' element={<Flashcard/>} />
+
+
+{/*React Assessment */}
+<Route path='firstAssessment' element={<ECommerceApp/>}/>
 
 </Routes>
 

@@ -40,6 +40,10 @@ console.log(flashcards)
 {(isFlipped)?(<>
 
 <h1>A : {flashcards[currentIndex].answer}</h1>
+<div id='radioBTN'>
+Right: <input type="radio" />  
+Wrong:<input type="radio" /></div>
+
 
 
 </>) :(<><p>Q:{flashcards[currentIndex].question}</p>
