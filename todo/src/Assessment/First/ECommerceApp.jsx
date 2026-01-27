@@ -9,10 +9,14 @@ function ECommerceApp() {
 const [data,setData]=useState([])
 const [error,setError]=useState(null)
 const [loading,setLoading]=useState(true)
+let arr=[]
 
 
 // inpurt Search
 const [value,setValue]=useState("")
+
+// for Paggination 
+const [start,setStart]=useState(0)
 
   useEffect(() => {
     fetch("https://fakestoreapi.com/products")
@@ -33,6 +37,29 @@ const [value,setValue]=useState("")
   }, []);
 
 console.log(data)
+
+
+// Pagination
+
+
+
+
+
+let max=5  
+let startValue=start*max
+let end=startValue+max
+console.log(startValue,end)
+
+if(data.length>0){
+
+  console.log("hi")
+  arr=data.slice(startValue,end)
+  console.log(arr)
+}
+
+
+
+
 
 
 if(loading){
@@ -63,8 +90,31 @@ if(error){
 
 
 
-{/*  */}
+{/* For sort  */}
 
+
+
+
+
+<select name="" id="">
+
+<option value="Ascending">A-B</option>
+<option value="Descending">B-A</option>
+
+</select>
+
+
+
+<select name="" id="">
+
+<option value="men's clothing">men's clothing</option>
+<option value="jewelery">jewelery</option>
+<option value="electronics">electronics</option>
+<option value="women's clothing">women's clothing</option>
+
+
+
+</select>
 
  </div>
 
@@ -72,6 +122,20 @@ if(error){
 
 <div id='MainProductDiv'>
 
+{arr.map((ele)=>{
+  
+  // console.log(ele)
+  return(<div key={ele.id}>
+
+<h1>{ele.id}</h1>
+<img src={ele.image} alt={ele.category} />
+<h5>{ele.price}</h5>
+
+
+</div>)
+
+
+})}
 
 
 
@@ -82,8 +146,8 @@ if(error){
 
 <div id='ProductBTN'>
 
-<button>Prev</button>
-<button>Next</button>
+<button  onClick={()=>{setStart((ele)=>ele-1) }}>Prev</button>
+<button onClick={()=>{setStart((ele)=>ele+1)}}>Next</button>
 
 
 </div> 
