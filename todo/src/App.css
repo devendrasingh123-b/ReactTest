@@ -93,3 +93,15 @@ justify-content: space-between;
 
 }
 
+
+
+/* drive02 */
+#navbarHeading{
+/* display: inline-block; */
+  text-align: center;
+  background-color: yellow;
+  color: tomato;
+
+
+
+}

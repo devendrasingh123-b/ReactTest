@@ -1,0 +1,21 @@
+.FlashcardQuestions{
+
+border: 1px double red;
+padding: 20px;
+margin: 10px;
+border-radius: 20px;
+display: flex;
+flex-direction: column;
+width: 200px;
+align-items: center;
+gap: 20px;
+text-align: center;
+
+
+}
+
+.FlashcardQuestions>button{
+    background-color: yellow;
+    padding: 5px;
+    border-radius: 10px;
+}

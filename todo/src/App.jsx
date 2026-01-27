@@ -13,6 +13,7 @@ import C2Q13Parent from './Class02/C2Q13/C2Q13Parent'
 import C2Q15 from './Class02/C2Q15/C2Q15'
 import C3Q11 from './Class03/C3Q11'
 import PostsFeed from './Drive01/PostsFeed'
+import Flashcard from './Drive02/Flashcard'
 
 function App() {
  
@@ -39,6 +40,9 @@ function App() {
 
 {/* Drive one */}
 <Route path='Drive01' element={<PostsFeed/>} />
+{/* Drive02 */}
+<Route path='Drive02' element={<Flashcard/>} />
+
 </Routes>
 
 
